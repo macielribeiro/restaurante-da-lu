@@ -474,7 +474,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="localEntrega" class="row mr-0 mt-0">
+                <div id="localEntrega" class="row mr-0 mt-0 hidden">
                     <div class="col-4">
                         <div class="form-group container-cep">
                             <label for="">CEP:</label>
@@ -551,7 +551,43 @@
                         </div>
                     </div>
                 </div>
-                <div id="resumoCarrinho" class="row mr-0 mt-0 hidden"></div>
+                <div id="resumoCarrinho" class="row mr-0 mt-0">
+                    <div class="col-12">
+                        <p class="title-carrinho mt-4"><b>Itens do Pedido:</b></p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row" id="listaItensResumo">
+                            <div class="col-12 item-carrinho resumo">
+                                <div class="img-produto-resumo">
+                                    <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg"
+                                        alt="">
+                                </div>
+                                <div class="dados-produto">
+                                    <p class="title-produto-resumo">
+                                        <b>nome do produto</b>
+                                    </p>
+                                    <p class="price-produto-resumo">
+                                        <b>R$ 100,00</b>
+                                    </p>
+                                </div>
+                                <p class="quantidade-produto-resumo">x <b>3</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="title-carrinho mt-4"><b>Local da Entrega:</b></p>
+                    </div>
+                    <div class="col-12 item-carrinho resumo">
+                        <div class="img-map"><i class="fas fa-map-marked-alt"></i></div>
+                        <div class="dados-produto"><p class="texto-endereco">
+                            <b id="resumoEndereco">Rua teste, 200, bairro teste</b>
+                        </p>
+                        <p class="cidade-endereco" id="cidadeEndereco">
+                            Cidade-SP / 04960-210
+                        </p>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="m-footer">
